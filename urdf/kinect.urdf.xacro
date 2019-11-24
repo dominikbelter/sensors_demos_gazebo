@@ -43,19 +43,19 @@
   </link>
   
   <link name="kinect_optical_link">
-      <visual>
+<!--      <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size="0.01 0.01 0.01"/>
       </geometry>
       <material name="orange"/>
-    </visual>
+    </visual>-->
   </link>
   
   <joint name="optical_joint" type="fixed">
     <parent link="kinect_link"/>
     <child link="kinect_optical_link"/>
-    <origin xyz="0.01 0 0.15" rpy="1.57 0 0"/>
+    <origin xyz="0.01 0 0.15" rpy="0.0 0 0"/>
   </joint>
   
   <material name="orange">
@@ -96,7 +96,7 @@
           <pointCloudTopicName>depth_registered/points</pointCloudTopicName>
           <frameName>kinect_link</frameName>
           <pointCloudCutoff>0.05</pointCloudCutoff>
-          <rangeMax>4.0</rangeMax>
+          <rangeMax>8.0</rangeMax>
         </plugin>
       </sensor>
   </gazebo>
