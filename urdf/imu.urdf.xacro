@@ -127,9 +127,10 @@
       <gaussianNoise>0.0</gaussianNoise>
       <updateRate>20.0</updateRate>
     </plugin>
+    
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
+  
   </gazebo>
-  <gazebo>
-</gazebo>
 
   <transmission name="tran1">
     <type>transmission_interface/SimpleTransmission</type>
