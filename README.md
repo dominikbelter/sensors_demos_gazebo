@@ -14,3 +14,6 @@ To start simulation use commands:
 
   $ roslaunch sensors_demos_gazebo hokuyo.launch
 
+For ROS2 examples check Jakubach's branch:
+
+https://github.com/Jakubach/sensors_demos_gazebo
